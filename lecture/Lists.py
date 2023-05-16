@@ -60,4 +60,114 @@
 # print(list_1[0:len(list_1):6])             #   [1, 7]
 # print(list_1[::6])                         #   [1, 7]
 
+# кортеж
+
+# t = ()
+# print(type(t))
+# t = (2, 5, 7,)
+# print(type(t))
+#
+# v = [5, 7, 9]
+# print(v)
+# print(type(v))
+#
+# v = tuple(v)
+# print(v)
+# print(type(v))
+
+# множественное присваивание примеры
+# a,b = 1, 2
+# a = b = 1
+
+# a,b,c, = v
+# print(a,b,c)
+
+#t = (1, 2, 7, 5, 4)
+#print(t[2])      #вывод картеж по индексу
+#for i in t:       # можем пройтись при помощи тикла for
+#    print(i)
+#
+#for i in range(len(t)):
+#    print(t[i])
+
+# Словари
+# dictionary = {}
+# dictionary = {'up': 'вверх', 'left': 'лево', 'down': 'низ', 'right': 'право'}
+# print(dictionary)    #{'up': 'вверх', 'left': 'лево', 'down': 'низ', 'right': 'право'}
+#print(dictionary['left'])   # 'лево'
+
+# Типы ключей могут отличаться
+#
+# print(dictionary['up'])     # 'вверх'
+# print(dictionary['right'])  # 'право'
+# dictionary['left'] = 'лево'
+# print(dictionary['left'])    #  'лево'
+# print(dictionary['type'])    #KeyError : 'type' нет такого ключа и будет ошибка
+
+# del dictionary['left']          #удаление элемента
+# for item in dictionary:         # for (k, v) in dictionary.items():
+#     print('{}: {}'.format(item, dictionary[item]))
+
+# up: вверх
+# down: низ
+# right: право
+
+# Множества
+
+# colors = {'red', 'green', 'blue'}
+# print(colors)                        #{'red', 'blue', 'green'}
+# colors.add('red')                   #при помощи add добовляем значение
+# print(colors)                        #{'red', 'blue', 'green'}
+# colors.add('grey')
+# print(colors)                         #{'red', 'blue', 'green','grey'}
+# colors.remove('red')
+# print(colors)                          #{'blue', 'green','grey'}
+# colors.discard('red')           # функция провереят значения и если нет такого значения то прохотит не выдовая ошибку
+# print(colors)
+# colors.clear()                 #удаление всего множества всех значений
+# print(colors)                  # set()
+
+# Операции со Множествами
+# a = {1, 2, 4, 7, 8}
+# b = {2, 5, 8, 13, 21}
+# c = a.copy()
+# u = a.union(b)               # объединение
+# i = a.intersection(b)        # пересечения те элементы которые повторяються
+# d1 = a.difference(b)          #
+# dr = b.difference(a)            #
+# q = a.union(b).difference(a.intersection(b))       # {1, 4, 5, 7, 13, 21}
+# print(q)
+
+# заморенное множество
+
+# a = {1, 8, 6}
+# b = frozenset(a)        # frozenset- замораживает и не можем изменять мночество
+# print(b)
+
+# Герератор списков
+# Создать список, состоящий из четных чисел в диапозоне от 1 до 100.
+# list_1 = []
+# for i in range(1, 101):
+#     list_1.append(i)
+#     print(list_1)
+# Это примемер можно записать так:
+
+# list_1 = [i for i in range(1, 101)]
+# print(list_1)
+
+# # добавить в задачу (только четные числа)
+# list_1 = [i for i in range(1, 101) if i % 2 == 0]
+# print(list_1)
+
+# # Создать пару каждому из чисел (Кортежи)
+# list_1 = [(i, i) for i in range(1, 101) if i % 2 == 0]
+# print(list_1)
+
+# Можно умножать, делить, вычетать, прибовлять
+# Умножить значение на (2)
+# list_1 = [i * 2 for i in range(10) if i % 2 == 0]
+# print(list_1)
+
+
+
 
