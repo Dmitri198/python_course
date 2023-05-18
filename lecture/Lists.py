@@ -151,10 +151,10 @@
 #     list_1.append(i)
 #     print(list_1)
 # Это примемер можно записать так:
-
+#
 # list_1 = [i for i in range(1, 101)]
 # print(list_1)
-
+#
 # # добавить в задачу (только четные числа)
 # list_1 = [i for i in range(1, 101) if i % 2 == 0]
 # print(list_1)
@@ -167,10 +167,7 @@
 # Умножить значение на (2)
 # list_1 = [i * 2 for i in range(10) if i % 2 == 0]
 # print(list_1)
-a = ("b")
-b = 3
-print(a)
-print(b)
+# лекция 2
 
 
 
