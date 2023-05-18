@@ -72,11 +72,11 @@
 # Input: [0, -1, 5, 2, 3]
 # Output: 2 (-1 < 5, 2 < 3)
 
-lst = [0, -1, 5, 2, 3]
-counter = 0
-prev = lst[0]
-for i in range(1, len(lst)):
-    if lst[i] > prev:
-        counter +=i
-    prev = lst[i]
-print(counter)
+# lst = [0, -1, 5, 2, 3]
+# counter = 0
+# prev = lst[0]
+# for i in range(1, len(lst)):
+#     if lst[i] > prev:
+#         counter +=i
+#     prev = lst[i]
+# print(counter)
